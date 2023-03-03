@@ -1,0 +1,8 @@
+{
+  "api": {
+    "mapboxgl": {
+      "accessToken": "pk.eyJ1IjoibGF2YWNoZSIsImEiOiJjazYxeXJ4amYwNXV6M2xxcm12NXB5ejdzIn0.gFSow4VRzePImCtP4LxrFQ",
+      "storageDurationMs": 360000000
+    }
+}
+}

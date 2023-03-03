@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tp TypeScript</title>
+</head>
+<body>
+<div id="loader">
+    <div class="loader-spinner"></div>
+</div>
+
+
+
+
+<div id="command-panel">
+    <h2>Créer un événement : </h2>
+    <div>Nom de l'événement :<input type="text" id="nom"></div>
+    <div><label>
+            Description de l'événement :<textarea id="description"></textarea>
+        </label></div>
+    <div>Date de début :<input type="datetime-local" id="dateDeDebut"></div>
+   <div>Date de fin :<input type="date" id="dateDeFin"></div>
+    <input type="hidden" id="lat" readonly>
+    <input type="hidden" id="lon" readonly>
+
+    <div id="validate" class="btn">Valider ✔</div>
+
+    <div id="filter">
+
+        <input type="checkbox" id="green-filter" class="color-filter" name="filter" checked>🟢 Dans 3j ou +<br>
+        <input type="checkbox" id="orange-filter" class="color-filter" name="filter" checked>🟡 Dans - de 3j<br>
+        <input type="checkbox" id="red-filter" class="color-filter" name="filter" checked>🟠 Terminé<br>
+
+    </div>
+
+</div>
+
+
+<div id="place-select">
+    <h2>Pour créer un événement, choisir un emplacement sur la carte</h2>
+</div>
+
+<div id="map"></div>
+
+<div id="menu-style">
+    <input
+            id="streets-v11"
+            type="radio"
+            name="rtoggle"
+            value="streets"
+            checked="checked"
+    />
+    <label for="streets">streets</label>
+    <input id="light-v10" type="radio" name="rtoggle" value="light" />
+    <label for="light">light</label>
+    <input id="dark-v10" type="radio" name="rtoggle" value="dark" />
+    <label for="dark">dark</label>
+    <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors" />
+    <label for="outdoors">outdoors</label>
+    <input id="satellite-streets-v11" type="radio" name="rtoggle" value="satellite" />
+    <label for="satellite">satellite</label>
+
+    <button id="center" > Centrer 🎯</button>
+
+
+</div>
+</body>
+</html>
